@@ -1,9 +1,7 @@
 package drawer
 
-import org.piccolo2d.PCanvas
 import org.piccolo2d.extras.PFrame
 import org.piccolo2d.nodes.PPath
-import org.piccolo2d.nodes.PText
 import java.awt.Color
 import javax.swing.JFrame
 
