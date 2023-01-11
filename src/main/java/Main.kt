@@ -34,10 +34,13 @@ val edgesGraph: Graph = GraphImpl(
 
 fun main() {
     val canvasSize = Pair(1000, 700)
+
     val awtDrawer = AwtDrawer(canvasSize)
     val pDrawer = PiccoloDrawer(canvasSize)
 
-    val graphDrawer = GraphDrawer(pDrawer)
+    val pGraphDrawer = GraphDrawer(pDrawer)
+    val awtGraphDrawer = GraphDrawer(awtDrawer)
 
-    graphDrawer.draw(edgesGraph)
+    pGraphDrawer.draw(matrixGraph)
+    awtGraphDrawer.draw(edgesGraph)
 }
